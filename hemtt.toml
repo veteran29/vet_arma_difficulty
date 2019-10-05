@@ -1,0 +1,32 @@
+name = "vet_arma_difficulty"
+prefix = "V29Difficulty"
+author = "veteran29"
+version = "0.1.0.0"
+include = ["./include"]
+files = ["mod.cpp"]
+
+exclude = ["*.psd", "*.png", "*.tga"]
+
+keyname = "{{prefix}}_arma_difficulty_{{version}}"
+signame = "{{prefix}}_arma_difficulty_{{version}}"
+reuse_private_key = false
+
+releasebuild = [
+    "!Set_version",
+    "@zip",
+    "!publish"
+]
+
+[scripts]
+    [scripts.Set_version]
+        steps_windows = [
+            "powershell ./tools/Set-Version.ps1 {{version}} '@vet_arma_difficulty'"
+        ]
+        # show_output = true
+
+    [scripts.publish]
+        steps_windows = [
+            "powershell ./tools/Publish.ps1 {{version}} YOUR_WORKSHOP_ID '@vet_arma_difficulty'"
+        ]
+        show_output = true
+
