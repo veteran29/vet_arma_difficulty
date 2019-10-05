@@ -26,7 +26,7 @@ releasebuild = [
 
     [scripts.publish]
         steps_windows = [
-            "powershell ./tools/Publish.ps1 {{version}} YOUR_WORKSHOP_ID '@V29Difficulty'"
+            "powershell ./tools/Publish.ps1 {{version}} 1881268484 '@V29Difficulty'"
         ]
         show_output = true
 
