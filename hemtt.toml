@@ -20,13 +20,13 @@ releasebuild = [
 [scripts]
     [scripts.Set_version]
         steps_windows = [
-            "powershell ./tools/Set-Version.ps1 {{version}} '@vet_arma_difficulty'"
+            "powershell ./tools/Set-Version.ps1 {{version}} '@V29Difficulty'"
         ]
         # show_output = true
 
     [scripts.publish]
         steps_windows = [
-            "powershell ./tools/Publish.ps1 {{version}} YOUR_WORKSHOP_ID '@vet_arma_difficulty'"
+            "powershell ./tools/Publish.ps1 {{version}} YOUR_WORKSHOP_ID '@V29Difficulty'"
         ]
         show_output = true
 
