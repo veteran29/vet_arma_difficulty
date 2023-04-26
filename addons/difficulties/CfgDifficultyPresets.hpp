@@ -15,7 +15,7 @@ class CfgDifficultyPresets {
             enemyTags=0;
             detectedMines=1;
             commands=2;
-            waypoints=2;
+            waypoints=0;
             weaponInfo=2;
             stanceIndicator=2;
             reducedDamage=0;
@@ -30,7 +30,7 @@ class CfgDifficultyPresets {
             autoReport=0;
             multipleSaves=1;
             squadRadar=0;
-            tacticalPing=3;
+            tacticalPing=1;
             mapContentFriendly=0;
             mapContentEnemy=0;
             mapContentMines=0;
