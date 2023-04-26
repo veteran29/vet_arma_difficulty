@@ -1,7 +1,6 @@
 name = "vet_arma_difficulty"
 prefix = "V29Difficulty"
 author = "veteran29"
-version = "0.1.0.0"
 include = ["./include"]
 files = ["mod.cpp"]
 
