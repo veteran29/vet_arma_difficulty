@@ -11,6 +11,14 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "HEMTT Release",
+            "type": "shell",
+            "command": ".\\hemtt.exe build --release",
+            "group": {
+                "kind": "build",
+            }
         }
     ]
 }
