@@ -36,4 +36,8 @@ class CfgDifficultyPresets {
             mapContentMines=0;
         };
     };
+    class veteran29_lowAccuracy: veteran29 {
+        displayName = "veteran29_lowAccuracy";
+        levelAI = "veteran29_lowAccuracy";
+    };
 };
